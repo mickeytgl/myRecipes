@@ -20,6 +20,8 @@ gem 'mini_magick', '~> 4.6', '>= 4.6.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'bootstrap-will_paginate', '~> 0.0.11'
 gem 'bcrypt', '3.1.11'
+gem 'fog', '~> 2.0.0.pre.0'
+gem 'net-ssh'
 
 
 group :development, :test do
