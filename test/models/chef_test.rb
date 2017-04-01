@@ -42,7 +42,7 @@ class ChefTest < ActiveSupport::TestCase
 	end
 
 	test "email validation should accept valid adresses" do 
-		valid_adresses = %w[user@eee.com R_TDD-D5@eee.hello.org user@example.com first.last@etu.au laura+john@green.cm]
+		valid_adresses = %w[user@eee.com R_TDD-D5@eee.hello.org user@example.com first.last@etu.au laurajohn@green.cm]
 		valid_adresses.each do |va|
 			@chef.email = va 
 			assert @chef.valid?, '#{va.inspect} should be valid'
