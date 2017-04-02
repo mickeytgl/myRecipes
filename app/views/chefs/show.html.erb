@@ -34,3 +34,6 @@
 	</div>
 <% end %>
 
+<%= render partial: "comments/comments", locals: {commentable: @chef} %>
+<%= render partial: "comments/form", locals: {commentable: @chef} %>
+

@@ -5,9 +5,12 @@ Rails.application.routes.draw do
 		member do 
 			post 'like'
 		end
+		resources :comments, module: :recipes 
 	end
 
-	resources :chefs, except: [:new, :destroy]
+	resources :chefs, except: [:new, :destroy] do 
+		resources :comments, module: :chefs
+	end
 
 	get '/register', to: 'chefs#new'
 
